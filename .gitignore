@@ -47,3 +47,6 @@ build/
 
 ### Docs ###
 /docs/
+
+### Storage ###
+/storage/config/BotConfig.json

@@ -18,13 +18,14 @@ public class Main {
 
         // Utilities
         JsonUtility jsonUtility = new JsonUtility();
-        JsonNode jsonNode;
+        JsonNode jsonNode = null;
         try {
             jsonNode = jsonUtility.load(path, customConfig);
         } catch (RuntimeException e) {
-            System.err.println(e.getMessage());
-            return;
+            System.err.println("No Bot Config found: " + e.getMessage());
+            System.exit(1);
         }
+
         // Frame
         new Frame(jsonNode);
     }
