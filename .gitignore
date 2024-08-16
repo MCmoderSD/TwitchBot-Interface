@@ -43,6 +43,7 @@ build/
 
 ### Resources ###
 /src/main/resources/config/BotConfig.json
+/src/main/resources/META-INF/
 
 ### Docs ###
 /docs/
